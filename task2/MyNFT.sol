@@ -24,29 +24,18 @@ contract MyNFT is ERC721URIStorage, Ownable {
 /*
 ### 2. 准备图文数据并上传 IPFS
 1. 准备图片 ：选择一张图片，上传到 IPFS（推荐用 Pinata、NFT.Storage 或 Infura）。
-2. 获取图片 IPFS 链接 ，如： ipfs://Qm.../yourimage.png
-ipfs://bafybeifcp7bt6e2gnqpi6smeeswk7s2lhfkyupc6g63jdqfuiv4yv5epqm/patrickhuang.png
+2. 获取图片 IPFS 链接
+ipfs://bafybeigwusmhuts4yqofaoxb3rndnaahzaixyvwfjb6hdv3r6mh4kjbfty
 3. 创建元数据 JSON 文件 ，内容参考 OpenSea 标准：
 ```
 {
-  "name": "My First NFT",
-  "description": "这是我的第一个图文 NFT 示
-  例。",
-  "image": "ipfs://bafybeifcp7bt6e2gnqpi6smeeswk7s2lhfkyupc6g63jdqfuiv4yv5epqm/patrickhuang.png",
-  "attributes": [
-    {
-      "trait_type": "Background",
-      "value": "Blue"
-    },
-    {
-      "trait_type": "Mood",
-      "value": "Happy"
-    }
-  ]
+  "name": "我的第一个NFT",
+  "description": "这是我学习 Solidity 铸造的第一个NFT。",
+  "image": "ipfs://bafybeigwusmhuts4yqofaoxb3rndnaahzaixyvwfjb6hdv3r6mh4kjbfty"
 }
 ```
-4. 上传 JSON 文件到 IPFS ，获得元数据链接，如： ipfs://Qm.../metadata.json
-ipfs://bafkreie7hbbfibqquihgttbn3ld7d77gxblzoysfkmlztrspqrk26dhabq/metadata.json
+4. 上传 JSON 文件到 IPFS ，获得元数据链接
+ipfs://bafkreiga46qtrgj6g26cuwsllist766f3aeertg7w54xywruyxizsqosqm
 ### 3. 部署合约到 Sepolia 测试网
 - 在 Remix IDE 中导入合约代码，连接 MetaMask 钱包（切换到 Sepolia 测试网）。
 - 编译并部署合约，记录合约地址。
